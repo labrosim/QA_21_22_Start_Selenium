@@ -36,6 +36,14 @@ public class Index {
         WebElement nav = wd.findElement(By.id("nav"));
         WebElement nav1 = wd.findElement(By.cssSelector("#nav"));
 
+        //by attribute
+
+        WebElement inputEmail = wd.findElement(By.cssSelector("[placeholder='Type your name']"));
+        WebElement a2 = wd.findElement(By.cssSelector("[href='#item2']"));
+
+        WebElement input1 = wd.findElement(By.cssSelector("[name='name']"));
+        WebElement inputS = wd.findElement(By.name("name"));
+
     }
 
 
