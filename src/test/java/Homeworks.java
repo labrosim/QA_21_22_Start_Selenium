@@ -38,7 +38,13 @@ public class Homeworks {
         WebElement e3 = driver.findElement(By.tagName("h3"));
         WebElement el3 = driver.findElement(By.cssSelector("h3"));
 
-        WebElement xPath1 = driver.findElement(By.xpath("//h2"));
+        WebElement xPath1 = driver.findElement(By.xpath("//body"));
+        WebElement xPath5 = driver.findElement(By.xpath("//div"));
+        WebElement xPath6 = driver.findElement(By.xpath("//h1"));
+        WebElement xPath7 = driver.findElement(By.xpath("//h2"));
+        WebElement xPath8 = driver.findElement(By.xpath("//h3"));
+        WebElement xPath9 = driver.findElement(By.xpath("//a"));
+
 
         //by class
         WebElement class1 = driver.findElement(By.className("navbar-component_nav__1X_4m"));
@@ -49,6 +55,8 @@ public class Homeworks {
         WebElement cl3 = driver.findElement(By.cssSelector(".active"));
 
         WebElement xPath2 = driver.findElement(By.xpath("//*[@class='container']"));
+        WebElement xPath10 = driver.findElement(By.xpath("//*[starts-with(@class,'nav')]"));
+        WebElement xPath11 = driver.findElement(By.xpath("//*[contains(@class,'ti')]"));
 
         //by id
         WebElement id = driver.findElement(By.id("root"));
@@ -60,6 +68,11 @@ public class Homeworks {
         WebElement attrib1 = driver.findElement(By.cssSelector("[href='/home']"));
         WebElement attrib2 = driver.findElement(By.cssSelector("[style='border: 1px solid black; background-color: black; color: white;']"));
         WebElement attrib3 = driver.findElement(By.cssSelector("[aria-current='page']"));
+
+        WebElement xPath12 = driver.findElement(By.xpath("//*[starts-with(@href,'/hom')]"));
+        WebElement xPath13 = driver.findElement(By.xpath("//*[contains(@style,'gh')]"));
+        WebElement xPath14 = driver.findElement(By.xpath("//*[contains(@aria-current,'ge')]"));
+
 
 
 
