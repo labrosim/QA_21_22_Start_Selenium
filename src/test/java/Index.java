@@ -17,6 +17,8 @@ public class Index {
 
     }
 
+
+
     @Test
     public void tableTest(){
         //Canada
@@ -24,8 +26,6 @@ public class Index {
         Assert.assertEquals(canada.getText(),"Canada");
 
     }
-
-
 
     @Test
     public void cssLocators(){

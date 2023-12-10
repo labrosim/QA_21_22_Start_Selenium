@@ -11,6 +11,29 @@ import java.util.List;
 public class Homeworks {
     WebDriver driver;
 
+    @Test
+    public void classWork(){
+        //parent
+        WebElement element = driver.findElement(By.xpath("//h1/parent::*"));
+        //WebElement element1 = driver.findElement(By.xpath("//div/div//input/.."));
+
+        //ancestor
+        WebElement el4 = driver.findElement(By.xpath("//h1/ancestor::*")); //all
+        WebElement el5 = driver.findElement(By.xpath("//h1/ancestor::div")); //2 options of div
+        WebElement el6 = driver.findElement(By.xpath("//h1/ancestor::div[2]")); //1 option
+
+        //ancestor-or-self
+        WebElement el7 = driver.findElement(By.xpath("//h1/ancestor-or-self::*"));//plus one more child
+        List<WebElement> list = driver.findElements(By.xpath("//h1/ancestor-or-self::*"));
+
+        //following-sibling
+        List<WebElement> list1 = driver.findElements(By.xpath("//h1/following-sibling::a"));
+
+        //preceding-sibling
+        WebElement el8 = driver.findElement(By.xpath("//a[@href='/login']/preceding-sibling::h1"));
+        List<WebElement> list3 = driver.findElements(By.xpath("//a[@href='/login']/preceding-sibling::a"));
+
+    }
     @BeforeClass
     public void start(){
         driver = new ChromeDriver();
