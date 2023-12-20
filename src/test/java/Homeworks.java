@@ -40,6 +40,21 @@ public class Homeworks {
         driver.get("https://telranedu.web.app/home");
     }
 
+    @Test
+    public void innerText(){
+        WebElement element = driver.findElement(By.cssSelector("[name='login']"));
+        String text = element.getText(); //get inner text
+        System.out.println(text);
+
+        WebElement element1 = driver.findElement(By.xpath("//form"));
+        String textForm = element1.getText();
+        System.out.println(textForm);
+
+        WebElement html = driver.findElement(By.tagName("html"));
+        String textAll = html.getText();
+        System.out.println(textAll);
+    }
+
     @AfterClass
     public void finish(){
         driver.quit();
